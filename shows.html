@@ -1,62 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Shows</title>
 </head>
+
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/home.html">Cat Shows</a>
-          <a href="/shows.html" class="btn btn-sm btn-primary position-relative">
-            Shows
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              4
-              <span class="visually-hidden">unread messages</span>
-            </span>
-        </a>
-          <button class="navbar-toggler btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/home.html">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/shows.html">Upcoming Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login.html">Logout</a>
-              </li>
-              <button type="button" class="btn btn-primary">
-                Shows <span class="badge bg-danger">4</span>
-              </button>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-          </div>
+    <div id="navbar"></div>
+    <!-- show title -->
+    <h1 class="display-3 text-center">Upcoming Shows</h1>
+    <!-- search -->
+    <form class="d-flex px-3">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            onchange="showListSearch()">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+        <div class="d-flex justify-content-end me-2">
+            <a href="/newShow.html" class="btn btn-outline-primary btn-sm ms-2">Create Show</a>
         </div>
-      </nav>
-      <!-- show list -->
-      <h1 class="display-3 text-center">Upcoming Shows</h1>
-      <div class="d-flex justify-content-end me-3">
-        <a href="/newShow.html" class="btn btn-outline-primary btn-sm">Create Show</a>
-      </div>
-      </div>
-      <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
-          <h2 class="display-7 text-center">Brisbane Cat Show</h2>
+    </form>
+    <!-- show list -->
+
+    </div>
+    <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
+        <h2 class="display-7 text-center">Brisbane Cat Show</h2>
         <div class="row">
             <div class="col-4">
-              <img src="/img/FCCQ.jpg" alt="" class="img-thumbnail">
+                <img src="/img/FCCQ.jpg" alt="" class="img-thumbnail">
             </div>
             <div class="col">
                 <div class="row">
@@ -70,63 +50,64 @@
                 </div>
             </div>
         </div>
-      </a>
-      <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
+    </a>
+    <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
         <h2 class="display-7 text-center">Sydney Cat Show</h2>
-      <div class="row">
-          <div class="col-4">
-            <img src="/img/CatsNSW.jpg" alt="" class="img-thumbnail">
-          </div>
-          <div class="col">
-              <div class="row">
-                  <span>27th March 2022</span>
-              </div>
-              <div class="row">
-                  <span>Brisbane Hall</span>
-              </div>
-              <div class="row">
-                  <span class="btn btn-primary btn-sm">Enter Show</span>
-              </div>
-          </div>
-      </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/img/CatsNSW.jpg" alt="" class="img-thumbnail">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span>27th March 2022</span>
+                </div>
+                <div class="row">
+                    <span>Brisbane Hall</span>
+                </div>
+                <div class="row">
+                    <span class="btn btn-primary btn-sm">Enter Show</span>
+                </div>
+            </div>
+        </div>
     </a>
     <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
         <h2 class="display-7 text-center">Perth Cat Show</h2>
-      <div class="row">
-          <div class="col-4">
-            <img src="/img/FCCWA.jpg" alt="" class="img-thumbnail">
-          </div>
-          <div class="col">
-              <div class="row">
-                  <span>27th March 2022</span>
-              </div>
-              <div class="row">
-                  <span>Brisbane Hall</span>
-              </div>
-              <div class="row">
-                  <span class="btn btn-primary btn-sm">Enter Show</span>
-              </div>
-          </div>
-      </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/img/FCCWA.jpg" alt="" class="img-thumbnail">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span>27th March 2022</span>
+                </div>
+                <div class="row">
+                    <span>Brisbane Hall</span>
+                </div>
+                <div class="row">
+                    <span class="btn btn-primary btn-sm">Enter Show</span>
+                </div>
+            </div>
+        </div>
     </a>
     <a class="card rounded mx-3 mt-3 bg-light shadow btn" href="/showView.html">
         <h2 class="display-7 text-center">Darwin Cat Show</h2>
-      <div class="row">
-          <div class="col-4">
-            <img src="/img/GCCFSA-logo-blue.jpg" alt="" class="img-thumbnail">
-          </div>
-          <div class="col">
-              <div class="row">
-                  <span>27th March 2022</span>
-              </div>
-              <div class="row">
-                  <span>Brisbane Hall</span>
-              </div>
-              <div class="row">
-                  <span class="btn btn-primary btn-sm">Enter Show</span>
-              </div>
-          </div>
-      </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="/img/GCCFSA-logo-blue.jpg" alt="" class="img-thumbnail">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <span>27th March 2022</span>
+                </div>
+                <div class="row">
+                    <span>Brisbane Hall</span>
+                </div>
+                <div class="row">
+                    <span class="btn btn-primary btn-sm">Enter Show</span>
+                </div>
+            </div>
+        </div>
     </a>
 </body>
+
 </html>

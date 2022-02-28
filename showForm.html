@@ -1,0 +1,99 @@
+<form class="needs-validation">
+    <div class="col m-3">
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="title" class="form-label">Title</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Location</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Date</label>
+            </div>
+            <div class="col">
+                <input type="date" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Council</label>
+            </div>
+            <div class="col">
+                <select name="council" id="council" class="form-select" required>
+                    <option value="">council 1</option>
+                    <option value="">council 2</option>
+                </select>
+            </div>
+        </div>
+        <h3 class="display-5 text-center pt-3 pb-3">Judges</h3>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Ring 1</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Ring 2</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Ring 3</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Ring 4</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3 pt-1">
+                <label for="location" class="form-label">Ring 5</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mx-3 my-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="row m-5">
+        <div class="col">
+          <button class="btn btn-primary" type="submit">Add Show</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-outline-danger" type="submit">Cancel</button>
+        </div>
+    </div>
+  </form>
